@@ -1,0 +1,4 @@
+# Ignore the SASS cache created by GRUNT
+.sass-cache
+# Ignore any Node output
+node_modules
