@@ -22,7 +22,6 @@ if ( ! defined('ABSPATH') ) exit;
  */
 function su_setup_styles() {
 
-	wp_register_style('normalize', THEME_CSS . 'normalize.min.css', $deps = array(), $ver = '2.1.2' );
 	wp_register_style('theme-styles', THEME_CSS . 'main.min.css', $deps = array(), $ver = SUDOH_VERSION );
 	
 } add_action('wp_enqueue_scripts', 'su_setup_styles', 10 );

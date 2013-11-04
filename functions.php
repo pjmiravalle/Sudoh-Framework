@@ -311,7 +311,6 @@ class Sudoh_Theme extends Theme_Constructor {
 	 */
 	public function styles() {
 
-		wp_enqueue_style('normalize');
     	wp_enqueue_style('theme-styles');
 
 	}
