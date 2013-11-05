@@ -8,8 +8,7 @@ Sudoh is a lightweight theming framework that ties all the goodness of [Foundati
 Please note that this framework is very early in development, and there will likely be bugs and quirks. If you happen to come across any said issues, please submit an Issue in GitHub and we'll try to iron it out as soon as we can. Thanks!
 
 ## Installation
-* Install the latest version of WordPress
-* Paste the `sudoh-theme` folder into your WordPress directory
+* Paste or Clone the `Sudoh-Framework-Master` folder into your WordPress theme directory
 * Install and activate the latest version of [Option Tree](http://wordpress.org/plugins/option-tree/)
 * Configure default settings for your site in the theme `functions.php` file
 * Activate your theme
