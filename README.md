@@ -28,6 +28,7 @@ Coming soon..
 * Post type helper class
 * Metabox helper class
 * Widget helper class
+* Compass support
 * Grunt build script
 
 ## Recommended Plugins
