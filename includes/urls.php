@@ -143,7 +143,7 @@ function su_clean_url( $url ) {
  * Then we check to ensure that the site is not a multisite or child theme.
  * Then we check to ensure that we are not on any admin related page.
  *
- * If everything checks out, we add our rewrite rules to the sites
+ * If everything checks out, we add our rewrite rules to the site's
  * htaccess, and we modify various URLs to match our new rewrite rules.
  *
  * Taken from Roots.
