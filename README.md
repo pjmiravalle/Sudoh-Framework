@@ -34,3 +34,4 @@ Coming soon..
 * [Option Tree](http://wordpress.org/plugins/option-tree/)
 * [W3 Total Cache](http://wordpress.org/plugins/w3-total-cache/)
 * [WordPress SEO](http://wordpress.org/plugins/wordpress-seo/)
+* [Regenerate Thumbnails](http://wordpress.org/plugins/regenerate-thumbnails/)
