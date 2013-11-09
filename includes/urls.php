@@ -157,6 +157,8 @@ function su_enable_url_rewrites() {
 	if ( ! current_theme_supports('sudoh-url-rewrites') )
 		return false;
 
+	//die('hey');
+
 	if ( ! is_multisite() && ! is_child_theme() ) {
 
   		if ( ! is_admin() ) {

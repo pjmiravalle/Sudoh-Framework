@@ -50,6 +50,9 @@ class Sudoh_Theme extends Theme_Constructor {
 	 *    /wp-content/themes/themename/assets/images/ becomes /assets/images/
 	 *    /wp-content/plugins/                        becomes /plugins/
 	 *
+	 *    * NOTE: If you decide to change enable / disable URL rewrites,
+	 *      you'll likely have to reset your permalinks.
+	 *
 	 * 4. jQuery CDN. When enabled, will request jQuery from Google's CDN network.
 	 *    Also adds a local fallback in the case that we can't communicate with Google.
 	 *
