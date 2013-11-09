@@ -14,7 +14,6 @@ if ( ! defined('ABSPATH') ) exit;
 /**
  * Handles all stylesheets associated with our framework.
  *
- * Registers normalize.css.
  * Registers main theme styles file.
  *
  * @since    0.1
