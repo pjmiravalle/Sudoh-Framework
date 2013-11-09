@@ -13,7 +13,7 @@ jQuery(document).ready( function($) {
          */
         general: function() {
 
-            // General scripts go here
+            // Custom Javascript here
 
         },
 
@@ -24,7 +24,7 @@ jQuery(document).ready( function($) {
          *
          * Inspired by Roots.
          */
-		pages: {
+        pages: {
 
             home: function() {
                 
@@ -56,17 +56,6 @@ jQuery(document).ready( function($) {
          */
         breakpoints: [
 
-            // 768 - 1024
-            {
-                from: 768,
-                to: 1024,
-                callback: function() {
-
-                    // Custom Javascript here
-
-                }
-            },
-
             // 768 and up
             {
                 from: 9999,
@@ -74,7 +63,7 @@ jQuery(document).ready( function($) {
                 callback: function() {
 
                     // Custom Javascript here
-
+                    
                 }
             },
 
@@ -91,11 +80,26 @@ jQuery(document).ready( function($) {
 
         ]
 
-	};
+    };
 
     /* ----------------------------------------------------------------------- *|
     /* ------ Loader --------------------------------------------------------- *|
     /* ----------------------------------------------------------------------- */
+
+    function checkBreakpoints() {
+
+        var width = $(this).width();
+
+        $.each( SudohTheme.breakpoints, function() {
+
+            // if current width resides between the two breakpoints
+            if ( this.to <= width && width <= this.from ) {
+                this.callback();
+            }
+
+        });
+
+    }
 
     (function() {
 
@@ -105,27 +109,14 @@ jQuery(document).ready( function($) {
         // Run page specific scripts
         $.each( SudohTheme.pages, function(key) {
 
-            if ( $('body').hasClass(key) )
+            if ( $('body').hasClass(key) ) {
                 this();
+            }
 
         });
 
         // Run breakpoint specific scripts, if we have any
         if ( SudohTheme.breakpoints[0] ) {
-
-            function checkBreakpoints() {
-
-                var width = $(this).width();
-
-                $.each( SudohTheme.breakpoints, function() {
-
-                    // if current width resides between the two breakpoints
-                    if ( this.to <= width && width <= this.from )
-                        this.callback();
-
-                });
-
-            }
 
             // Run on page load and window resize
             checkBreakpoints();
@@ -135,4 +126,4 @@ jQuery(document).ready( function($) {
 
     })();
 
-});// Theme Scripts
+});
