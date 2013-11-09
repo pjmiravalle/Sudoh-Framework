@@ -8,10 +8,13 @@ Sudoh is a lightweight theming framework that ties all the goodness of [Foundati
 Please note that this framework is very early in development, and there will likely be bugs and quirks. If you happen to come across any said issues, please submit an Issue in GitHub and we'll try to iron it out as soon as we can. Thanks!
 
 ## Installation
-* Paste or Clone the `Sudoh-Framework-Master` folder into your WordPress theme directory
-* Install and activate the latest version of [Option Tree](http://wordpress.org/plugins/option-tree/)
-* Configure default settings for your site in the theme `functions.php` file
-* Activate your theme
+1. Clone our repo `git clone git@github.com:Sudoh/Sudoh-Framework.git`, or get the ZIP [here](https://github.com/Sudoh/Sudoh-Framework/archive/master.zip). Once downloaded, rename the folder to the name of your theme.
+* Install and activate the latest version of [Option Tree](http://wordpress.org/plugins/option-tree/).
+* Configure default settings for your site in the `functions.php` file.
+* Activate your theme.
+
+## Grunt Setup
+Our framework has [Grunt](http://gruntjs.com/) support! Install Grunt [here](http://gruntjs.com/getting-started), and then run `npm install` in your command line from within your theme directory. Once all Grunt dependencies have been installed, run `grunt watch`. This will tell Grunt to watch for updates to your SCSS and JS files and it will automatically re-build as you write your code.  
 
 ## Documentation
 Coming soon..
