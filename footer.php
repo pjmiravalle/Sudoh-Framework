@@ -33,8 +33,10 @@ if ( ! defined('ABSPATH') ) exit; ?>
 <?php wp_footer(); ?>
 
 <script>
-	
-	$(document).foundation();
+
+jQuery(document).ready(function($){
+$(document).foundation();
+}); 
 
 </script>
 
