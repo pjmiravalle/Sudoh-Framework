@@ -47,7 +47,7 @@ class Example_Widget extends SU_Widget {
 		$this->options = array(
 			'name'        => 'Example Widget',       // Widget name
 			'description' => 'Widget description.',  // Widget description
-			'class'       => 'projects-cycle-widget' // CSS class
+			'classname'   => 'projects-cycle-widget' // CSS class
 		);
 
 		// Default values for widget fields
