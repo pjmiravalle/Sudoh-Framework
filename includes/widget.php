@@ -36,7 +36,8 @@ function su_register_sidebars() {
 		foreach ( $sidebars as $key => $sidebar ) {
 			if ( ! isset($sidebar['id']) )
 				$sidebar['id'] = $key;
-			register_sidebar( array_merge($sidebar, $pieces) );
+
+			register_sidebar( apply_filters('sudoh-sidebar', array_merge($sidebar, $pieces) ) );
 		}
 	}
 
