@@ -1,7 +1,7 @@
 [Sudoh Framework](https://github.com/Sudoh/Sudoh-Framework)
 ===============
 
-Version 0.1 : WordPress 3.7.1 stable.
+Version 0.1 : WordPress 3.8 stable.
 
 Sudoh is a lightweight theming framework that ties all the goodness of [Foundation 4](http://foundation.zurb.com/) and [HTML5 Boilerplate](http://html5boilerplate.com/) with WordPress.
 
