@@ -102,9 +102,11 @@ class Theme_Constructor {
 
         if ( ! class_exists('OT_Loader') ) {
 
+            $link = '<a href="/wp-admin/update.php?action=install-plugin&plugin=option-tree&_wpnonce=df9e3f2748">' . __('here', 'sudoh') . '</a>';
+
             $html = '<div class="error">';
                 $html .= '<p>';
-                    $html .= __('Option Tree must be activated in order for your theme to function properly. Click <a href="http://wordpress.org/plugins/option-tree/" target="_blank">here</a> to install now.', 'sudoh');
+                    $html .= __('Option Tree must be activated in order for your theme to function properly. Please click ', 'sudoh') . $link . __(' to install now.', 'sudoh');
                 $html .= '</p>';
             $html .= '</div>';
 
