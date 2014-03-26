@@ -112,12 +112,17 @@ class Sudoh_Theme extends Theme_Constructor {
 	 * Creates default pages for your site when the theme is activated.
 	 * Feel free to add or remove pages from this list as needed.
 	 *
+	 * Also removes default 'Sample Page'.
+	 *
 	 * @since    0.1
 	 * @access   public
 	 * @uses     wp_insert_post http://codex.wordpress.org/Function_Reference/wp_insert_post
 	 * @return   array
 	 */
 	public function pages() {
+
+		// Removes 'Sample Page' page
+		wp_delete_post( 2, $forced = true );
 
 		// Home Page
         $this->pages['home'] = array(
