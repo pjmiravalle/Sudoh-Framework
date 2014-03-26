@@ -89,10 +89,9 @@ class Sudoh_Theme extends Theme_Constructor {
 	public function settings() {
 
 		// General Settings
-		$this->settings['blogdescription'] = 'Your Site Tagline';
-		$this->settings['date_format']     = 'F j, Y';
-		$this->settings['time_format']     = 'g:i a';
-		$this->settings['gmt_offset']      = '-5';
+		$this->settings['date_format'] = 'F j, Y';
+		$this->settings['time_format'] = 'g:i a';
+		$this->settings['gmt_offset']  = '-5';
 
 		// Reading Settings
 		$this->settings['show_on_front'] = 'page';

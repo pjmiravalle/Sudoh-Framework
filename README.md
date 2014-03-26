@@ -12,6 +12,7 @@ Please note that this framework is very early in development, and there will lik
 * Install and activate the latest version of [Option Tree](http://wordpress.org/plugins/option-tree/).
 * Configure default settings for your site in the `functions.php` file.
 * Activate your theme.
+* Reset your permalinks
 
 ## Grunt Setup
 Our framework has [Grunt](http://gruntjs.com/) support! Install Grunt [here](http://gruntjs.com/getting-started), and then run `npm install` in your command line from within your theme directory. Once all Grunt dependencies have been installed, run `grunt watch`. This will tell Grunt to watch for updates to your SCSS and JS files and it will automatically re-build as you write your code.  
