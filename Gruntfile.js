@@ -14,6 +14,22 @@ module.exports = function (grunt) {
                 '!assets/js/plugins/*.min.js'
             ]
         },
+        compass: {
+            dev: {
+                options: {
+                    config: 'config.rb'
+                }
+            }
+        },
+        cssmin: {
+            minify: {
+                expand: true,
+                cwd: 'assets/css/',
+                src: 'main.css',
+                dest: 'assets/css/',
+                ext: '.min.css'
+            }
+        },
         uglify: {
             dist: {
                 files: {
@@ -23,29 +39,10 @@ module.exports = function (grunt) {
                 }
             }
         },
-        sass: {
-            dist: {
-                options: {
-                    style: 'compressed'
-                },
-                files: {
-                    'assets/css/main.min.css': [
-                        'assets/scss/main.scss'
-                    ]
-                }
-            }
-        },
-        compass: {
-            dev: {
-                options: {
-                    config: 'config.rb'
-                }
-            }
-        },
         watch: {
             sass: {
                 files: ['assets/scss/*.scss'],
-                tasks: ['compass:dev']
+                tasks: ['compass:dev', 'cssmin:minify']
             },
             js: {
                 files: ['<%= jshint.all %>'],
@@ -80,6 +77,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
 
     // Register tasks
     grunt.registerTask('default', [
